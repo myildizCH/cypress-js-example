@@ -1,0 +1,16 @@
+{
+  "name": "flink-ta-test",
+  "version": "1.0.0",
+  "description": "Weather Shopper ",
+  "main": "index.js",
+  "scripts": {
+    "cy:chrome": "npx cypress run --browser chrome",
+    "cy:firefox": "npx cypress run --browser firefox"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.3.1"
+  }
+}
