@@ -17,7 +17,7 @@ it("adds correct items to the cart depending on the current temperature", () => 
       SunscreenPage.buySunscreens();
     } else {
       cy.log(
-        `The temperature is: ${temperature}. Test could not be executed since the value is not between 19 and 34 Celcius`
+        `The temperature is: ${temperature}. Test could not be executed since the value is between 19 and 34 Celcius`
       );
     }
   });
