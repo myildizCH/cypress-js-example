@@ -4,13 +4,18 @@
   "description": "Weather Shopper ",
   "main": "index.js",
   "scripts": {
+    "cy:run": "cypress run --browser chrome --headless",
     "cy:chrome": "npx cypress run --browser chrome",
-    "cy:firefox": "npx cypress run --browser firefox"
+    "cy:firefox": "npx cypress run --browser firefox",
+    "cy:parallel": "cypress-parallel -s cy:run -t 1 -m false"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^9.3.1"
+  },
+  "dependencies": {
+    "cypress-parallel": "^0.8.4"
   }
 }
